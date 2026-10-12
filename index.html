@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#103553"><title>ذكرى مصطفى رشيد علي</title>
+<style>
+:root{--n:#103553;--b:#5e9fc5;--c:#f8f0df;--g:#b99b61;--i:#173d5b}
+*{box-sizing:border-box}body{margin:0;background:#e9edf0;color:var(--i);font-family:Tahoma,Arial,sans-serif;line-height:1.85}
+.page{position:relative;isolation:isolate;max-width:850px;margin:auto;overflow:hidden;background:radial-gradient(ellipse at 50% 15%,#fffdf7,#f7f0e2 58%,#e8e8df);box-shadow:0 0 40px #102d4c22}
+.page:before{content:"";position:absolute;inset:-25%;z-index:-1;pointer-events:none;background:linear-gradient(115deg,transparent 34%,#fff9 42%,#fff2 48%,transparent 56%);background-size:220% 220%;animation:beam 10s ease-in-out infinite alternate}
+.page:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 8% 14%,#fff 0 2px,transparent 4px),radial-gradient(circle at 87% 30%,#fff9 0 3px,transparent 6px),radial-gradient(circle at 16% 64%,#fff 0 2px,transparent 5px),radial-gradient(circle at 81% 82%,#fff9 0 3px,transparent 7px);animation:twinkle 3.7s ease-in-out infinite alternate}
+@keyframes beam{0%{transform:translate(-7%,-4%);opacity:.15}50%{opacity:.8}100%{transform:translate(8%,5%);opacity:.3}}@keyframes twinkle{from{opacity:.25}to{opacity:1}}@keyframes glow{0%,100%{box-shadow:0 0 10px #d7c28a66}50%{box-shadow:0 0 30px #d7c28acc}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.content{padding:22px clamp(15px,4.7vw,42px) 28px;text-align:center}.corner{position:absolute;color:#2e6b90;opacity:.28;font-size:70px;pointer-events:none}.one{top:5px;left:5px}.two{top:370px;right:-14px}.three{bottom:30px;left:-10px}
+.topline{font-size:13px;letter-spacing:1px;color:#50718a;margin:5px 0 12px}.quotes{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#244d6b;margin:8px 0 10px}.quote{width:27%;font-size:clamp(12px,2.5vw,16px);line-height:1.8}.quote.mid{flex:1;width:auto}
+.portrait-wrap{width:min(76%,410px);margin:0 auto 14px;padding:9px;border:2px solid #c6a86d;border-radius:48% 48% 42% 42%;background:#fff9;position:relative;animation:glow 4.8s ease-in-out infinite}.portrait{display:block;width:100%;aspect-ratio:4/4.1;object-fit:cover;object-position:center 28%;border-radius:48% 48% 42% 42%}
+.subtitle{font-size:clamp(17px,3.7vw,24px);margin:5px 0 0}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,9.3vw,70px);line-height:1.35;color:#103b60;margin:0;text-shadow:0 2px #fff,0 0 16px #c7dce7}.date{font-size:clamp(19px,4vw,26px);font-weight:bold;margin:3px 0 17px;color:#204e71}
+.orn{width:60%;height:1px;margin:16px auto;background:linear-gradient(90deg,transparent,var(--g),transparent);position:relative}.orn:after{content:"❧";position:absolute;left:50%;top:-17px;transform:translateX(-50%);background:#f7f0e2;padding:0 10px;color:#396b88;font-size:22px}
+.message{max-width:600px;margin:12px auto 18px;font-size:clamp(15px,3.3vw,19px)}.date-card{max-width:420px;margin:18px auto;padding:12px 16px;border:3px double #b99b61;border-radius:14px;background:#fff9}.date-card strong{display:block;color:#174a70;font-size:20px}.prayer{font-weight:bold;margin:18px auto;color:#244e6d}
+.buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:26px auto 20px}.action{border:1px solid #d4bd81;border-radius:18px;background:linear-gradient(145deg,#245a80,#0b2d4b);color:#fff9ec;padding:14px 7px 12px;min-height:142px;cursor:pointer;box-shadow:0 7px 15px #0c2d4926,inset 0 1px #fff7;transition:transform .2s,filter .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;font:inherit}.action:hover,.action:focus-visible{transform:translateY(-4px);filter:brightness(1.14);outline:2px solid #c8ad6c;outline-offset:3px}.icon{font-size:30px;line-height:1.2;animation:float 4s ease-in-out infinite}.action strong{font-size:clamp(13px,2.7vw,16px);line-height:1.5}.action span:last-child{font-size:12px;opacity:.92}
+.footer{background:#103553;color:#fff6e6;padding:18px 10px;margin:25px -12px -28px;font-size:17px}.footer small{display:block;color:#d9e7ee;font-size:12px;margin-top:5px}
+.modal{display:none;position:fixed;inset:0;z-index:20;background:#091d2bcc;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.dialog{width:min(100%,510px);max-height:90vh;overflow:auto;background:#fff9ed;border:2px solid #c4a76b;border-radius:20px;padding:22px;text-align:right;box-shadow:0 20px 70px #0005}.dialog h2{margin:0 0 10px;color:#143f60;font-size:23px}.dialog p{margin:0 0 12px}
+textarea,input{width:100%;border:1px solid #c5b993;border-radius:10px;background:white;padding:12px;font:inherit;color:#183d59;margin:6px 0 12px}textarea{min-height:115px;resize:vertical}.modal-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;border-radius:10px;padding:10px 16px;background:#16486b;color:#fff;font:inherit;cursor:pointer}.btn.secondary{background:#e7e0d1;color:#173d5b}.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photos img{width:100%;border-radius:12px;border:1px solid #d1bd8c}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#103553;color:white;padding:10px 18px;border-radius:99px;z-index:40;display:none}.toast.show{display:block}
+@media(max-width:520px){.buttons{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.action{min-height:132px}.quotes{gap:5px}.quote{width:25%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head>
+<body>
+<audio id="memorialAudio" src="tilawat-al-mulk.mp3" autoplay preload="auto" playsinline></audio>
+<button id="audioStart" type="button" aria-label="تشغيل تلاوة القرآن">▶ تشغيل التلاوة</button>
+<style>
+#audioStart{position:fixed;z-index:50;bottom:16px;right:50%;transform:translateX(50%);border:1px solid #cdb77a;border-radius:999px;padding:11px 20px;background:#103553;color:#fff7e8;font:inherit;box-shadow:0 5px 20px #0003;cursor:pointer}
+#audioStart[hidden]{display:none}
+</style>
+<main class="page"><span class="corner one">❧</span><span class="corner two">❦</span><span class="corner three">❧</span><div class="content">
+<div class="topline">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+<div class="quotes"><div class="quote">رحلت عنا<br>جسدًا.. وبقيت<br>في قلوبنا دائمًا</div><div class="quote mid">الذين إذا أصابتهم مصيبة قالوا إنا لله وإنا إليه راجعون</div><div class="quote">ذكراك باقية<br>ودعاؤنا لك<br>لا ينقطع</div></div>
+<div class="portrait-wrap"><img class="portrait" src="mustafa-portrait.jpg" alt="صورة مصطفى رشيد علي"></div>
+<p class="subtitle">دعوة لإحياء ذكرى وفاة المغفور له</p><h1>مصطفى رشيد علي</h1><div class="date">16 / 10 / 2019</div><div class="orn"></div>
+<p class="message">نتشرف بدعوتكم للمشاركة في إحياء ذكراه بالدعاء له، وقراءة القرآن الكريم، وتلاوة الفاتحة على روحه الطاهرة.</p>
+<div class="date-card"><strong>ذكرى الوفاة</strong>16 أكتوبر 2019</div><p class="prayer">رحم الله فقيدنا الغالي.. وجعل ذكراه دائمًا في قلوبنا</p><div class="orn"></div>
+<section class="buttons" aria-label="أزرار الدعوة التفاعلية">
+<button class="action" data-a="khatma"><span class="icon">📖</span><strong>ختمة القرآن</strong><span>شارك في ختمة القرآن الكريم</span></button>
+<button class="action" data-a="dua"><span class="icon">🤲</span><strong>الدعاء والكلمة الطيبة</strong><span>اكتب دعاءك أو كلمة طيبة</span></button>
+<button class="action" data-a="photos"><span class="icon">🖼️</span><strong>الصور والذكريات</strong><span>شاهد الصورة ومعاينة التصميم</span></button>
+<button class="action" data-a="share"><span class="icon">🔗</span><strong>مشاركة الدعوة</strong><span>شارك الرابط أو انسخه</span></button>
+<button class="action" data-a="details"><span class="icon">📅</span><strong>معلومات العزاء</strong><span>تفاصيل الذكرى والتاريخ</span></button>
+<button class="action" data-a="copydua"><span class="icon">💙</span><strong>نسخ دعاء له</strong><span>انسخ الدعاء أو أرسله</span></button></section>
+<p>اضغط على أيقونة للتفاعل والمشاركة</p><div class="footer">اللهم ارحمه واغفر له وأسكنه فسيح جناتك<small>مصطفى رشيد علي · ستبقى ذكراه في قلوبنا</small></div></div></main>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="dialog"><h2 id="mt">دعاء وكلمة طيبة</h2><div id="mb"></div><div class="modal-actions" id="ma"></div><div style="margin-top:12px"><button class="btn secondary" data-close>إغلاق</button></div></div></div><div class="toast" id="toast" role="status"></div>
+<script>
+const modal=document.getElementById('modal'),mt=document.getElementById('mt'),mb=document.getElementById('mb'),ma=document.getElementById('ma'),toast=document.getElementById('toast');
+const dua='اللهم ارحم مصطفى رشيد علي، واغفر له، واعفُ عنه، وأكرم نُزله، ووسّع مدخله، واجعل قبره روضةً من رياض الجنة.';
+function note(s){toast.textContent=s;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2500)}
+async function copy(s){try{await navigator.clipboard.writeText(s);note('تم النسخ بنجاح')}catch(e){let t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();note('تم نسخ النص')}}
+function openM(t,h,bs=[]){mt.textContent=t;mb.innerHTML=h;ma.innerHTML='';bs.forEach(b=>{let x=document.createElement('button');x.className='btn '+(b.sec?'secondary':'');x.textContent=b.label;x.onclick=b.fn;ma.appendChild(x)});modal.classList.add('open')}
+function closeM(){modal.classList.remove('open')}document.querySelector('[data-close]').onclick=closeM;modal.addEventListener('click',e=>{if(e.target===modal)closeM()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+function share(){let u=location.href,txt='دعوة لإحياء ذكرى مصطفى رشيد علي بتاريخ 16/10/2019. اللهم ارحمه واغفر له.';if(navigator.share){navigator.share({title:'ذكرى مصطفى رشيد علي',text:txt,url:u}).catch(()=>{})}else{openM('مشاركة الدعوة','<p>انسخ رابط الدعوة أو شاركه عبر واتساب بعد نشر الصفحة على GitHub Pages.</p><input id="url" readonly value="'+u.replace(/&/g,'&amp;').replace(/"/g,'&quot;')+'">',[{label:'نسخ الرابط',fn:()=>copy(u)},{label:'واتساب',sec:true,fn:()=>window.open('https://wa.me/?text='+encodeURIComponent(txt+' '+u),'_blank')}])}}
+document.querySelectorAll('[data-a]').forEach(b=>b.addEventListener('click',()=>{switch(b.dataset.a){
+case 'khatma':openM('شارك في ختمة القرآن','<p>افتح منصة ختمة لإنشاء ختمة جماعية أو الانضمام إلى ختمة قائمة، ثم شارك رابطها مع العائلة.</p><p><b>ملاحظة:</b> المنصة خارجية، ولا تنشئ ختمة تلقائيًا باسم المرحوم.</p>',[{label:'فتح منصة ختمة',fn:()=>window.open('https://khatma.eu/?lang=ar','_blank')},{label:'نسخ دعاء له',sec:true,fn:()=>copy(dua)}]);break;
+case 'dua':openM('اكتب دعاء أو كلمة طيبة','<p>اكتب دعاءً أو كلمة طيبة وشاركها مع الأهل والأصدقاء.</p><textarea id="di">'+dua+'</textarea>',[{label:'إرسال عبر واتساب',fn:()=>window.open('https://wa.me/?text='+encodeURIComponent(document.getElementById('di').value),'_blank')},{label:'نسخ النص',sec:true,fn:()=>copy(document.getElementById('di').value)}]);break;
+case 'photos':openM('الصور والذكريات','<p>الصورة التذكارية ومعاينة تصميم الدعوة.</p><div class="photos"><img src="mustafa-portrait.jpg" alt="صورة مصطفى رشيد علي"><img src="design-preview.png" alt="معاينة التصميم"></div>',[{label:'مشاركة الدعوة',fn:share}]);break;
+case 'share':share();break;
+case 'details':openM('معلومات الذكرى','<p><b>الاسم:</b> مصطفى رشيد علي</p><p><b>التاريخ:</b> 16 أكتوبر 2019</p><p>نسأل الله أن يتغمده بواسع رحمته ويجعل الدعاء نورًا له.</p>',[{label:'تنزيل ملف التقويم',fn:()=>{let s='BEGIN:VCALENDAR\\nVERSION:2.0\\nBEGIN:VEVENT\\nSUMMARY:ذكرى مصطفى رشيد علي\\nDTSTART:20191016T090000\\nDTEND:20191016T093000\\nDESCRIPTION:'+dua+'\\nEND:VEVENT\\nEND:VCALENDAR',blob=new Blob([s],{type:'text/calendar'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='mustafa-memorial.ics';a.click();URL.revokeObjectURL(a.href)}},{label:'نسخ التفاصيل',sec:true,fn:()=>copy('ذكرى مصطفى رشيد علي\\n16/10/2019\\n'+dua)}]);break;
+case 'copydua':openM('دعاء للمرحوم','<p>'+dua+'</p>',[{label:'نسخ الدعاء',fn:()=>copy(dua)},{label:'إرساله عبر واتساب',sec:true,fn:()=>window.open('https://wa.me/?text='+encodeURIComponent(dua),'_blank')}]);break;
+}}));
+
+// Try to start recitation automatically; some browsers require a tap first.
+(function(){
+ const audio=document.getElementById('memorialAudio');
+ const start=document.getElementById('audioStart');
+ audio.volume=0.85;
+ const tryPlay=()=>audio.play().then(()=>{start.hidden=true}).catch(()=>{start.hidden=false});
+ window.addEventListener('load',tryPlay);
+ start.addEventListener('click',()=>{tryPlay()});
+ // Any first user gesture can unlock audio playback on mobile browsers.
+ const unlock=()=>{tryPlay();document.removeEventListener('pointerdown',unlock);document.removeEventListener('keydown',unlock)};
+ document.addEventListener('pointerdown',unlock,{once:true});
+ document.addEventListener('keydown',unlock,{once:true});
+})();
+
+</script></body></html>
